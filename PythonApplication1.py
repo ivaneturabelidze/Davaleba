@@ -28,4 +28,4 @@ with open('image_1.webp', 'wb') as img:
 
 response = requests.get('https://httpbin.org/ip')
 with open('my-ip.txt', 'w') as ip:
-    ip.write(response.text)
+    ip.write(response.text+"\n")
